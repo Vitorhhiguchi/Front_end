@@ -7,9 +7,9 @@ h3 {
     color: green;
 }
 
-p {
+/* p {
     color: blueviolet;
-}
+} */
 
 /* Algum comentário */
 /* mais um comentário */
@@ -71,4 +71,71 @@ h2{
 
 .mixed-rgb{
     color: rgb(123, 124, 87);
+}
+
+/* RGBA */
+
+.rgba {
+    color: rgba(100, 199, 45, 0.3);
+}
+
+.hsl {
+    color: hsl(150, 25%, 30%);
+}
+
+.hsl-2{
+    color: hsl(12, 50%, 10%);
+}
+
+.hsl-3{
+    color: hsl(340, 60%, 90%);
+}
+
+/* background-color */
+.bg{
+    background-color: #000;
+    color: yellow;
+}
+
+.bg-2{
+    background-color: rgb(200, 20, 40);
+    color: #00eaff;
+}
+
+/* Background opacity */
+.bg-opacity{
+    background-color: green;
+    opacity: 0.2;
+}
+
+.bg-opacity-2{
+    background-color: #999;
+    color: #000;
+    opacity: 0.8;
+}
+
+/* RGBA com opacidade */
+.rgba-opacity{
+    background-color: rgba(90, 120, 20, 0.2);
+    color: #000;
+}
+
+/* BG image */
+.bg-image{
+    background-image: url("../img/nature.jpg");
+    padding: 10px;
+    color: #fff;
+}
+
+/* Centralizando BG image */
+.not-centered-bg,
+.centered-bg{
+    height: 400px;
+    width: 400px;
+    background-image: url("../img/bridge.jpg");
+}
+
+.centered-bg{
+    background-position: center;
+    background-size: cover;
 }
