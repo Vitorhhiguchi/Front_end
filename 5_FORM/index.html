@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h2>Formulários HTML</h2>
+    <!-- 1 - Primeiro formulário -->
+    <!-- 2 - Atributos de formulário -->
+    <form action="register.php" method="post">
+        <div>
+            <label>Nome:</label>
+            <input type="text" />
+        </div>
+        <!-- 3 - atributo Name -->
+        <div>
+            <!-- 4 - Atributo label -->
+            <label for="age">Idade:</label>
+            <input type="text" name="age">
+            <!-- Utilizando o name no input, para o backend é mais facil de saber a função dessa entrada -->
+        </div>
+        <!-- 6 - select -->
+        <div>
+            <label for="job">Selecione a sua profissão:</label>
+            <select name="job">
+                <option value="programador">Programador</option>
+                <option value="medico">Médico</option>
+                <option value="tester">Tester/QA</option>
+                <option value="devops">DevOps</option>
+            </select>
+        </div>
+        <!-- 7 - atributo selected -->
+        <div>
+            <label for="contract">Você leu os termos do contrato?</label>
+            <select name="contract">
+                <option value="sim">Sim</option>
+                <option value="nao" selected>Não</option> <!-- o atributo selected é utilizado, quando voce quer que a opção ja apareceça marcado no site-->
+            </select>
+        </div>
+        <!-- 8 - multiplas opções -->
+        <div>
+            <label for="items">Selecione os items desejados</label>
+            <select name="items" multiple>
+                <option value="pera">Pera</option>
+                <option value="feijao">Feijão</option>
+                <option value="arroz">Arroz</option>
+                <option value="milho">Milho</option>
+            </select>
+        </div>
+        <!-- 9 - textarea -->
+        <!-- É a tag mais indicado para textos longos -->
+        <div>
+            <label for="comment">Escreva abaixo o que você achou do post:</label>
+            <textarea name="comment"></textarea>
+        </div>
+
+        <!-- 5 - envio de form -->
+        <input type="submit" value="Enviar"/>
+    </form>
+</body>
+</html>
