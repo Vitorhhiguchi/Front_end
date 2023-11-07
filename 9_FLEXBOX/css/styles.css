@@ -1,0 +1,27 @@
+/* 1 - FLex */
+.flex {
+    display: flex;
+    background-color: #ddd;
+    margin-bottom: 20px;
+}
+
+/* 2- Flex Column */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    background-color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* 3 - Wrap */
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.box {
+    height: 40px;
+    width: 33%;
+    border: 1px solid red;
+}
